@@ -3,7 +3,6 @@ const path = require("node:path");
 const app = express();
 const PORT = 8080;
 
-const messages = [];
 const {addNewMessage, getIndex} = require('./controllers/messageController')
 
 app.set("view engine", "ejs");
