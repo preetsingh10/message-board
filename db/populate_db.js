@@ -1,4 +1,4 @@
-const pool = require('./db_connection')
+const pool = require('./pool')
 
 async function populate_db(){
     await pool.query('INSERT INTO messages(message, username) VALUES($1,$2)', ['kida bro', 'preet'])
